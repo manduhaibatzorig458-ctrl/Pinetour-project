@@ -1,0 +1,527 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/*Hero Section*/
+section#hero {
+  background-image: url(/picture/HeroImage.png);
+  width: 100vw;
+  height: 773px;
+}
+
+#hero-container {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+#header-container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 118px;
+  padding-right: 118px;
+}
+
+#navbar-items {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-item {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+/* hero section text */
+
+#hero-texts {
+  margin-top: 69px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#hero-title {
+  font-size: 80px;
+  font-weight: 400;
+  color: #e8edf2;
+}
+
+#hero-subtitle {
+  font-size: 250px;
+  font-weight: 400;
+  color: #fdfdfa;
+}
+
+#hero-year {
+  font-size: 64px;
+  font-weight: 400;
+  color: #ffffffcc;
+}
+/* Hero section text end/
+/* Hero Section End*/
+
+/*location section*/
+#location-container {
+  height: 500px;
+  background-image: url(./picture/Location\ image\ \(2\).png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#locations {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-right: 109px;
+  padding-left: 109px;
+}
+
+#location-name {
+  width: 232px;
+  height: 88px;
+  color: #fdfdfe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 140px;
+}
+
+.location-card {
+  width: 275.49px;
+  height: 370px;
+  background-size: cover;
+  position: relative;
+  border-radius: 40px;
+}
+
+.black-box {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  border-radius: 40px;
+  opacity: 0.5;
+  display: none;
+}
+.card1:hover .black-box,
+.card2:hover .black-box,
+.card3:hover .black-box,
+.card4:hover .black-box {
+  display: flex;
+}
+.card1 {
+  background-image: url(./picture/TERKHIIN\ TSAGAAN.png);
+}
+
+.card2 {
+  background-image: url(./picture/AMARBAYSGALANT.png);
+}
+.card3 {
+  background-image: url(./picture/KHUVSGUL.png);
+}
+.card4 {
+  background-image: url(./picture/HORGO.png);
+}
+/* location section end */
+/* roadmap section */
+#roadmap-container {
+  height: 1022px;
+  background-image: url(./picture/Roadmap\ image.png);
+  background-size: cover;
+  position: relative;
+  justify-content: center;
+}
+
+#roadmap-title {
+  width: 1440px;
+  height: 204px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#left-container {
+  width: 513px;
+  height: 640px;
+  background-color: aquamarine;
+}
+
+#huree {
+  width: 1200px;
+  height: 640px;
+  margin-top: 100px;
+  margin-left: 120px;
+  justify-content: space-between;
+  margin-bottom: 175px;
+}
+.left-container {
+  width: 513px;
+  height: 640px;
+  gap: 20px;
+}
+#sukhbaatar-location {
+  width: 245px;
+  height: 245px;
+  background-image: url(./picture/Sukh.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 320px;
+  right: 190px;
+  display: none;
+}
+
+.roadmap-card1:hover + #sukhbaatar-location img{
+  display: flex;
+}
+#amar-location img {
+  width: 245px;
+  height: 245px;
+  border-radius: 50%;
+  position: absolute;
+  top: 300px;
+  right: 450px;
+  display: none;
+}
+  
+.roadmap-card2:hover #amar-location img {
+  display: flex;
+}
+
+#khorgo-location {
+  width: 245px;
+  height: 245px;
+  background-image: url(./picture/HORGO.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 500px;
+  right: 500px;
+  display: none;
+}
+.roadmap-card3:hover + #khorgo-location {
+  display: flex;
+}
+
+#terkhi-location {
+  width: 245px;
+  height: 245px;
+  background-image: url(./picture/Terkhi.png);
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  right: 560px;
+  display: none;
+}
+
+.roadmap-card4:hover + #terkkhi-location {
+  display: flex;
+}
+#khuvsgul-location {
+  width: 245px;
+  height: 245px;
+  background-size: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 160px;
+  right: 170px;
+  background-image: url(./picture/KHUVSGUL.png);
+  display: none;
+}
+.rooadmap-card4:hover + #khuvsgul-location {
+  display: flex;
+}
+
+.roadmap-card:hover {
+  border: 5px solid white;
+}
+.roadmap-card {
+  width: 513px;
+  height: 112px;
+  border-radius: 120px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  border: 5px solid transparent;
+}
+.roadmap-card1 {
+  background-color: #eee9d9;
+}
+.location {
+  width: 14px;
+  height: 14px;
+  display: flex;
+}
+
+.circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.roadmap-card2 {
+  background-color: #8bb8c1;
+}
+.roadmap-card3 {
+  background-color: #aad8d7;
+}
+.roadmap-card4 {
+  background-color: #8bc0bd;
+}
+.roadmap-card5 {
+  background-color: #97cce0;
+}
+
+#roadmap-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#footer-container {
+  height: 1120px;
+  background-image: url(./picture/Price&Footer\ image.png);
+  background-size: cover;
+  justify-content: center;
+  position: relative;
+}
+/* #Title container {
+  width: 1440px;
+  height: 85px;
+  background-color: red;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+} */
+
+.first {
+  justify-content: center;
+  padding-left: 580px;
+}
+.second {
+  padding-left: 525px;
+}
+
+#card-container {
+  width: 1200px;
+  height: 527px;
+  margin-left: 120px;
+  margin-top: 100px;
+  display: flex;
+  gap: 24px;
+}
+
+#Budget-package {
+  width: 384px;
+  height: 527px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+#Standard-package {
+  width: 384px;
+  height: 527px;
+  background-color: white;
+  border-radius: 40px;
+}
+
+#Luxury-package {
+  width: 384px;
+  height: 527px;
+  background-color: white;
+  border-radius: 40px;
+}
+.box1 {
+  display: flex;
+  width: 384px;
+  height: 92px;
+
+  gap: 10px;
+  align-items: center;
+  padding-left: 24px;
+}
+.budget {
+  width: 144px;
+  height: 22px;
+}
+
+.box2 {
+  width: 384px;
+  height: 435px;
+}
+
+#dotorh-box {
+  width: 336px;
+  height: 290px;
+  margin-left: 24px;
+}
+
+.select {
+  width: 336px;
+  height: 48px;
+  background-color: #a4d1e2;
+  border: 30px;
+  margin-left: 24px;
+  margin-top: 40px;
+  border-radius: 30px;
+  justify-content: center;
+}
+
+.select-package1 {
+  width: 157px;
+  height: 48px;
+  position: absolute;
+  left: 260px;
+  padding-top: 13px;
+}
+.select-package2 {
+  padding-left: 120px;
+  padding-top: 13px;
+}
+
+.select-package3 {
+  padding-left: 120px;
+  padding-top: 13px;
+}
+
+#une {
+  width: 336px;
+  height: 78px;
+  padding-top: 10px;
+}
+
+#tailbar {
+  width: 336px;
+  height: 180px;
+  margin-top: 35px;
+  /* gap: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.size1 {
+  width: 336px;
+  height: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.size2 {
+  width: 336px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.size3 {
+  width: 336px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.size4 {
+  width: 336px;
+  height: 20px;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.hehe {
+  width: 157px;
+  height: 48px;
+  position: absolute;
+  left: 260px;
+  padding-left: 60px;
+}
+.includes {
+  margin-left: 32px;
+}
+.pin {
+  position: absolute;
+}
+#pinlocation1 {
+  top: 135%;
+  right: 60%;
+}
+#pinlocation2 {
+  right: 45.5%;
+  bottom: -40%;
+}
+#pinlocation3 {
+  bottom: -29%;
+  right: 54%;
+}
+#pinlocation4 {
+  right: 55%;
+  bottom: -60%;
+}
+
+#suuliin-box {
+  width: 1440px;
+  height: 204px;
+  padding-top: 200px;
+}
+
+#logo-1 {
+  width: 358px;
+  height: 44px;
+
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-left: 120px;
+}
+#facebook {
+  width: 167px;
+  height: 44px;
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#instagram {
+  width: 177px;
+  height: 44px;
+  background-color: white;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#logo-2 {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 120px;
+}
+ 
