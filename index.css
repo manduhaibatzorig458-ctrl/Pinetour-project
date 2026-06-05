@@ -144,15 +144,19 @@ section#hero {
   background-size: cover;
   position: relative;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #roadmap-title {
   width: 1440px;
-  height: 204px;
+  height: 84px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  margin-top:120px ;
 }
 
 #left-container {
@@ -162,12 +166,14 @@ section#hero {
 }
 
 #huree {
+  display: flex;
   width: 1200px;
   height: 640px;
-  margin-top: 100px;
-  margin-left: 120px;
+  /* margin-top: 100px; */
+  /* margin-left: 120px; */
   justify-content: space-between;
-  margin-bottom: 175px;
+  /* margin-bottom: 175px; */
+  margin-top: 59px;
 }
 .left-container {
   width: 513px;
@@ -177,29 +183,31 @@ section#hero {
 #sukhbaatar-location {
   width: 245px;
   height: 245px;
+  border-radius: 50%;
   background-image: url(./picture/Sukh.png);
   background-size: cover;
-  border-radius: 50%;
   position: absolute;
   top: 320px;
   right: 190px;
   display: none;
 }
 
-.roadmap-card1:hover + #sukhbaatar-location img{
+.roadmap-card1:hover #sukhbaatar-location {
   display: flex;
 }
-#amar-location img {
+#amar-location {
   width: 245px;
   height: 245px;
   border-radius: 50%;
+  background-image: url(./picture/AMAR.png);
+  background-size: cover;
   position: absolute;
   top: 300px;
   right: 450px;
   display: none;
 }
   
-.roadmap-card2:hover #amar-location img {
+.roadmap-card2:hover #amar-location {
   display: flex;
 }
 
@@ -214,7 +222,7 @@ section#hero {
   right: 500px;
   display: none;
 }
-.roadmap-card3:hover + #khorgo-location {
+.roadmap-card3:hover #khorgo-location {
   display: flex;
 }
 
@@ -230,7 +238,7 @@ section#hero {
   display: none;
 }
 
-.roadmap-card4:hover + #terkkhi-location {
+.roadmap-card4:hover  #terkkhi-location {
   display: flex;
 }
 #khuvsgul-location {
@@ -524,4 +532,8 @@ section#hero {
   justify-content: flex-end;
   padding-right: 120px;
 }
- 
+.right-container
+{
+  width: 647px;
+  height: 640px;
+}
