@@ -116,6 +116,10 @@ section#hero {
   border-radius: 40px;
   opacity: 0.5;
   display: none;
+  box-shadow:
+    8px 8px #29728b40,
+    -8px -8px #1f72aa75;
+  border-radius: 30px;
 }
 .card1:hover .black-box,
 .card2:hover .black-box,
@@ -156,7 +160,7 @@ section#hero {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  margin-top:120px ;
+  margin-top: 120px;
 }
 
 #left-container {
@@ -206,7 +210,7 @@ section#hero {
   right: 450px;
   display: none;
 }
-  
+
 .roadmap-card2:hover #amar-location {
   display: flex;
 }
@@ -214,7 +218,7 @@ section#hero {
 #khorgo-location {
   width: 245px;
   height: 245px;
-  background-image: url(./picture/HORGO.png);
+  background-image: url(./picture/Khorgo.png);
   background-size: cover;
   border-radius: 50%;
   position: absolute;
@@ -233,12 +237,12 @@ section#hero {
   background-size: cover;
   border-radius: 50%;
   position: absolute;
-  top: 200px;
+  top: 220px;
   right: 560px;
   display: none;
 }
 
-.roadmap-card4:hover  #terkkhi-location {
+.roadmap-card4:hover #terkhi-location {
   display: flex;
 }
 #khuvsgul-location {
@@ -247,12 +251,12 @@ section#hero {
   background-size: cover;
   border-radius: 50%;
   position: absolute;
-  top: 160px;
+  top: 500px;
   right: 170px;
   background-image: url(./picture/KHUVSGUL.png);
   display: none;
 }
-.rooadmap-card4:hover + #khuvsgul-location {
+.roadmap-card5:hover #khuvsgul-location {
   display: flex;
 }
 
@@ -338,6 +342,7 @@ section#hero {
   margin-top: 100px;
   display: flex;
   gap: 24px;
+  border-radius: 30px;
 }
 
 #Budget-package {
@@ -347,11 +352,33 @@ section#hero {
   border-radius: 40px;
 }
 
+#Budget-package:hover {
+  box-shadow:
+    8px 8px #29728b40,
+    -8px -8px #1f72aa75;
+}
+
+#Budget-package:hover .select {
+  background-color: black;
+  color: white;
+}
+
 #Standard-package {
   width: 384px;
   height: 527px;
   background-color: white;
   border-radius: 40px;
+}
+#Standard-package:hover .select{
+  background-color: black;
+  color: white;
+
+}
+#Standard-package:hover{
+  box-shadow:
+    8px 8px #29728b40,
+    -8px -8px #1f72aa75;
+
 }
 
 #Luxury-package {
@@ -359,6 +386,16 @@ section#hero {
   height: 527px;
   background-color: white;
   border-radius: 40px;
+}
+#Luxury-package:hover{
+  box-shadow:
+    8px 8px #29728b40,
+    -8px -8px #1f72aa75;
+
+}
+#Luxury-package:hover .select{
+  background-color: black;
+  color: white;
 }
 .box1 {
   display: flex;
@@ -532,8 +569,7 @@ section#hero {
   justify-content: flex-end;
   padding-right: 120px;
 }
-.right-container
-{
+.right-container {
   width: 647px;
   height: 640px;
 }
